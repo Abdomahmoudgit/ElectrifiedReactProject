@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* font-family: $noto-black;
+      font-family: $noto-bold;
+      font-family: $noto-medum;
+      font-family: $noto-regular;
+      font-family: $noto-semiBold;*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Noto-regular";
+  src: url("/webfonts/NotoSansArabic-Regular.ttf");
+}
+@font-face {
+  font-family: "Noto-medum";
+  src: url("/webfonts/NotoSansArabic-Medium.ttf");
+}
+@font-face {
+  font-family: "Noto-semiBold";
+  src: url("/webfonts/NotoSansArabic-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Noto-bold";
+  src: url("/webfonts/NotoSansArabic-Bold.ttf");
+}
+@font-face {
+  font-family: "Noto-black";
+  src: url("/webfonts/NotoSansArabic-Black.ttf");
+}
+/* Medium */
+@media screen and (max-width: 991px) {
+  .firstPage .landing h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .firstPage .landing p {
+    display: none;
+  }
+}
+/*Spitial width*/
+@media (max-width: 487px) {
+  .fBottons {
+    flex-wrap: wrap;
+  }
+}
+/* شاشات صغيرة فقط */
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
+  /* Medium screens (tablets) */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media (max-width: 767.98px) {
+  /* Small screens (phones) */
+  .col-sm-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .firstPage #main P {
+    color: #ffffff;
+  }
+  .firstPage #main P.active, .firstPage #main P:hover, .firstPage #main P:focus {
+    color: #ddfd36;
+  }
+  .firstPage .shadow {
+    -webkit-backdrop-filter: blur(44px);
+            backdrop-filter: blur(44px);
+    background: linear-gradient(270.91deg, rgba(0, 0, 0, 0.75) 0.95%, rgba(0, 0, 0, 0) 99.39%);
+  }
+  .firstPage .shadow .shadow .textColor {
+    color: #ffffff;
+  }
+}
+/* Large */
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body .firstPage {
+  margin: auto;
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+body .firstPage .navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  --bs-bg-opacity: 1;
+  font-family: "Noto-regular";
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+body .firstPage .navbar .navbar-nav .nav-link P.active, body .firstPage .navbar .navbar-nav .nav-link P:hover, body .firstPage .navbar .navbar-nav .nav-link P:focus {
+  color: #ddfd36;
+}
+body .firstPage .landing {
+  color: #f8f9fa;
+  min-height: calc(100vh - 58px);
+}
+body .firstPage .landing h1 {
+  font-family: "Noto-black";
+}
+body .firstPage .landing p {
+  font-family: "Noto-regular";
+}
+body .firstPage .landing .btn-success {
+  background-color: #ddfd36;
+  font-family: "Noto-regular";
+  height: 50px;
+  width: 200px;
+}
+body .firstPage .landing .btn-light {
+  font-family: "Noto-regular";
+  height: 50px;
+  width: 200px;
+}
+body .firstPage .landing .btn-light:hover {
+  background-color: #ddfd36;
+  font-family: "Noto-regular";
+}
+body .secoundPage {
+  background-color: #ffffff;
+}
+body .secoundPage h3 {
+  font-family: "Noto-semiBold";
+  font-size: 20px;
+  margin-right: 15px;
+}
+body .secoundPage .wordsInSec2 {
+  height: 330.73px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .secoundPage .wordsInSec2 h1 {
+  margin-top: 51px;
+  font-family: "Noto-black";
+}
+body .secoundPage .wordsInSec2 h1 span {
+  color: rgb(192, 219, 51);
+}
+body .secoundPage .wordsInSec2 p {
+  font-family: "Noto-medum";
+  font-family: "Noto-semiBold";
+  font-size: 20px;
+}
+body .secoundPage .limited-img {
+  width: 100%;
+  height: auto;
+}
+body .secoundPage .item img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .therdPage .divImg {
+  margin-top: 40px;
+}
+body .therdPage .divImg #imgForM {
+  margin-top: 75px;
+}
+body .therdPage .bl2 {
+  height: 150px;
+  background-color: black;
+}
+body .therdPage .wigh2 {
+  height: 30px;
+  background-color: white;
+}
+body .therdPage .textPage {
+  font-family: "Noto-bold";
+}
+body .therdPage .textPage span {
+  color: #ddfd36;
+  text-decoration: underline;
+}
+body .therdPage .fBottons2 {
+  height: 53px;
+}
+body .therdPage .fBottons2 .btn-success {
+  background-color: #ddfd36;
+  font-family: "Noto-regular";
+  height: 50px;
+  width: 200px;
+}
+body .therdPage .fBottons2 .btn-light {
+  font-family: "Noto-regular";
+  height: 50px;
+  width: 200px;
+}
+body .therdPage .fBottons2 .btn-light:hover {
+  background-color: #ddfd36;
+  font-family: "Noto-regular";
+}
+body .therdPage .container P {
+  margin: 28px auto 32px auto;
+  width: 382px;
+}
+body .therdPage .container .imgPage3 img {
+  height: auto;
+  width: 547px;
+}
+body .therdPage .container .textPage3 h2 {
+  font-family: "Noto-bold";
+}
+body .fourthPage .fBottons2 {
+  height: 180px;
+}
+body .fourthPage .fBottons2 .btn-end {
+  background-color: white;
+  font-family: "Noto-bold";
+  width: 273px;
+  height: 63px;
+  font-size: 20px;
+  border: 1.5px solid #000000;
+  border-radius: 12px;
+}
+body .fourthPage .fBottons2 .btn-end:hover {
+  background-color: #ddfd36;
+  font-family: "Noto-black";
+}
+body .fourthPage .ptext {
+  width: 486px;
+  margin: 0px auto 0px auto;
+}
+body .fourthPage .img1 {
+  text-align: center;
+  margin-top: 70px;
+}
+body .fourthPage .img1 img {
+  max-width: 100%;
+  height: auto;
+}
+body .fourthPage .img1 p {
+  margin-top: 10px;
+}
+body .h1style {
+  height: 90px;
+  font-size: 32px;
+  font-family: "Noto-bold";
+}/*# sourceMappingURL=bondi.css.map */

@@ -1,0 +1,329 @@
+$black-back: rgba(0, 0, 0, 0.1);
+$green-color: #ddfd36;
+$green-2: rgb(192, 219, 51);
+$green-3: rgba(221, 253, 54, 0.49);
+$secondary-color: #f8f9fa;
+$noto-regular: "Noto-regular";
+$noto-medum: "Noto-medum";
+$noto-semiBold: "Noto-semiBold";
+$noto-bold: "Noto-bold";
+$noto-black: "Noto-black";
+/* font-family: $noto-black;
+      font-family: $noto-bold;
+      font-family: $noto-medum;
+      font-family: $noto-regular;
+      font-family: $noto-semiBold;*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Noto-regular";
+  src: url("/webfonts/NotoSansArabic-Regular.ttf");
+}
+@font-face {
+  font-family: "Noto-medum";
+  src: url("/webfonts/NotoSansArabic-Medium.ttf");
+}
+@font-face {
+  font-family: "Noto-semiBold";
+  src: url("/webfonts/NotoSansArabic-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Noto-bold";
+  src: url("/webfonts/NotoSansArabic-Bold.ttf");
+}
+@font-face {
+  font-family: "Noto-black";
+  src: url("/webfonts/NotoSansArabic-Black.ttf");
+}
+
+/* Medium */
+@media screen and (max-width: 991px) {
+  .firstPage {
+    .landing {
+      h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+/*Spitial width*/
+@media (max-width: 487px) {
+  .fBottons {
+    flex-wrap: wrap;
+  }
+}
+/* شاشات صغيرة فقط */
+@media (max-width: 767px) {
+}
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
+  /* Medium screens (tablets) */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Small screens (phones) */
+  .col-sm-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .firstPage {
+    #main {
+      P {
+        color: #ffffff;
+
+        &.active,
+        &:hover,
+        &:focus {
+          color: $green-color;
+        }
+      }
+    }
+    .shadow {
+      backdrop-filter: blur(44px);
+      background: linear-gradient(
+        270.91deg,
+        rgba(0, 0, 0, 0.75) 0.95%,
+        rgba(0, 0, 0, 0) 99.39%
+      );
+
+      .shadow .textColor {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+}
+
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  .row {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .firstPage {
+    margin: auto;
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+
+    .navbar {
+      background-color: $black-back;
+      --bs-bg-opacity: 1;
+      font-family: $noto-regular;
+      position: absolute;
+      right: 0;
+      left: 0;
+
+      .navbar-nav {
+        .nav-link {
+          P {
+            &.active,
+            &:hover,
+            &:focus {
+              color: $green-color;
+            }
+          }
+        }
+      }
+    }
+
+    .landing {
+      color: $secondary-color;
+      min-height: calc(100vh - 58px);
+
+      h1 {
+        font-family: $noto-black;
+      }
+
+      p {
+        font-family: $noto-regular;
+      }
+
+      .btn-success {
+        background-color: $green-color;
+        font-family: $noto-regular;
+        height: 50px;
+        width: 200px;
+      }
+
+      .btn-light {
+        font-family: $noto-regular;
+        height: 50px;
+        width: 200px;
+
+        &:hover {
+          background-color: $green-color;
+          font-family: $noto-regular;
+        }
+      }
+    }
+  }
+
+  .secoundPage {
+    background-color: #ffffff;
+    h3 {
+      font-family: $noto-semiBold;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    .wordsInSec2 {
+      height: 330.73px;
+      display: flex;
+      flex-wrap: wrap;
+
+      h1 {
+        margin-top: 51px;
+        font-family: $noto-black;
+
+        span {
+          color: $green-2;
+        }
+      }
+
+      p {
+        font-family: $noto-medum;
+        font-family: $noto-semiBold;
+        font-size: 20px;
+      }
+    }
+
+    .limited-img {
+      width: 100%;
+      height: auto;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .therdPage {
+    .divImg {
+      margin-top: 40px;
+
+      #imgForM {
+        margin-top: 75px;
+      }
+    }
+    .bl2 {
+      height: 150px;
+      background-color: black;
+    }
+    .wigh2 {
+      height: 30px;
+      background-color: white;
+    }
+
+    .textPage {
+      font-family: $noto-bold;
+      span {
+        color: $green-color;
+        text-decoration: underline;
+      }
+    }
+    .fBottons2 {
+      height: 53px;
+      .btn-success {
+        background-color: $green-color;
+        font-family: $noto-regular;
+        height: 50px;
+        width: 200px;
+        
+      }
+
+      .btn-light {
+        font-family: $noto-regular;
+        height: 50px;
+        width: 200px;
+
+        &:hover {
+          background-color: $green-color;
+          font-family: $noto-regular;
+        }
+      }
+    }
+    .container {
+      P {
+        margin: 28px auto 32px auto;
+        width: 382px;
+      }
+      .imgPage3 {
+        img {
+          height: auto;
+          width: 547px;
+        }
+      }
+      .textPage3 {
+        h2 {
+          font-family: $noto-bold;
+        }
+      }
+    }
+  }
+  .fourthPage {
+    .fBottons2 {
+      height: 180px;
+
+      .btn-end {
+        background-color: white;
+        font-family: $noto-bold;
+        width: 273px;
+        height: 63px;
+        font-size: 20px;
+        border: 1.5px solid #000000;
+        border-radius: 12px;
+
+        &:hover {
+          background-color: $green-color;
+          font-family: $noto-black;
+        }
+      }
+    }
+    .ptext {
+      width: 486px;
+      margin: 0px auto 0px auto;
+    }
+
+    .img1 {
+      text-align: center; // مركز النص أسفل الصورة
+      margin-top: 70px;
+      img {
+        max-width: 100%; // تأكد من أن الصور تتناسب مع عرض العمود
+        height: auto; // الحفاظ على نسبة الطول إلى العرض
+      }
+
+      p {
+        margin-top: 10px; // مسافة بين الصورة والنص
+      }
+    }
+  }
+  .h1style {
+    height: 90px;
+    font-size: 32px;
+    font-family: $noto-bold;
+  }
+}
